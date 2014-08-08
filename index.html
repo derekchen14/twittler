@@ -1,27 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
   <head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="shark.css">
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:440,700' rel='stylesheet' type='text/css'>
+
   </head>
   <body>
-    <script>
+    <div class="container">
+      <div id="header"><h1>Twittler</h1></div>
+      <div class="stream"><div id="tweets"></div></div>
+      <button>Refresh</button>
 
-      $(document).ready(function(){
-        var $body = $('body');
-        $body.html('');
-
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
-        }
-
-      });
-
-    </script>
+      <div class="profile" ng-controller="profileController" style="display: none;">
+          <span class="pf"><h3>User Timeline</h3></span>
+          <ul class="timeline"></ul>
+      </div>
+    </div>
   </body>
 </html>

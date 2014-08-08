@@ -1,0 +1,74 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-image:url('hr_logo.jpeg');
+	/*background-repeat:repeat-y;*/
+}
+
+h1 {
+	color: blue;
+	font-family: 'Lobster', cursive;
+	text-decoration: underline;
+	font-weight: bolder;
+}
+.pf {
+	text-align: center;
+}
+h3 {
+	font-style: italic;
+}
+
+#header {
+	text-align: center;
+}
+
+.container {
+	background-color: lightblue;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.user {
+	font-style: bold;
+	font-size: 1.1em;
+	cursor: pointer;
+}
+.message {
+	font-style: normal;
+	font-size: 1em;
+	padding-left: 3em;
+	color: #2C2E2C;
+}
+
+.stream {
+	background-color: #E6F5F7;
+	padding: 14px 20px;
+	margin: 0 20px;
+}
+.tweet{
+	margin: 5px;
+}
+#tweets {
+	font-size: 14px;
+}
+
+.profile {
+	margin: 20px;
+	border: 3px solid blue;
+	padding: 10px 30px;
+}
+.personal {
+	font-size: 0.9em;
+}
+
+button {
+	margin: 10px 0 0 20px;
+	background: rgb(223, 117, 20);
+	color: white;
+	border-radius: 6px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	padding: .5em 1em;
+	font-family: Tahoma, sans-serif;
+	font-size: 1.1em;
+	border: 1px solid #E6F5F7;
+}
